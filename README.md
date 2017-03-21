@@ -11,16 +11,17 @@ To use `SBB-Connections` module, add it to the modules array in the `config/conf
 ````javascript
 
 modules: [
-    {
-			module: 'MMM-sbb-connections',
-			position: 'top_left',	// This can be any of the regions.
-			config: {
-				from: 'Rotkreuz',
-				to: 'Luzern',
-				limit: '6',
-				direct: '1' // 1 = true ; 0 = false
-			}
-		},
+	{
+		module: 'MMM-sbb-connections',
+		header: 'SBB-Connections',
+		position: 'top_left',	// This can be any of the regions.
+		config: {
+			from: 'Rotkreuz',
+			to: 'Luzern',
+			limit: '6',
+			direct: '1' // 1 = true ; 0 = false
+		}
+	},
 ]
 
 ````
