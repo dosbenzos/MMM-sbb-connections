@@ -1,13 +1,10 @@
-/* global Module */
-
 /* Magic Mirror
- * Module: sbb
+ * Module: sbb-connections
  *
  * By Bendicht Eggimann
- * MIT Licensed.
  */
 
-Module.register("MMM-sbb-connection",{
+Module.register("MMM-sbb-connections",{
 	// Default module config.
 	result: [],
 	sbbConnections: {},
@@ -19,7 +16,7 @@ Module.register("MMM-sbb-connection",{
 	},
     // Define styles.
     getStyles: function() {
-        return ["sbb-connection.css"];
+        return ["sbb-connections.css"];
     },
 
 	start: function() {
@@ -35,7 +32,7 @@ Module.register("MMM-sbb-connection",{
 	getDom: function() {
 		var self = this;
         var wrapper = document.createElement("div");
-        wrapper.id = "MMM-sbb-connection"
+        wrapper.id = "MMM-sbb-connections"
 		try{var test = this.sbbConnections.connections[0];}
 		catch(err){
 			Log.info("sbbConnections is empty");
