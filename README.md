@@ -1,7 +1,7 @@
 # MMM-sbb-connections
 Module of the magic mirror project for swiss public transportation (sbb)
 
-# Module: SBB-connections
+# Module: MMM-sbb-connections
 The `sbb-connections` module allows you to display the next connections from your station on your MagicMirror.
 
 
